@@ -1,0 +1,18 @@
+#root {
+  margin: 0;
+}
+
+.App {
+  height: 100vh;
+}
+
+.point {
+  display: inline-block;
+  position: absolute;
+  pointer-events: none;
+  height: 10px;
+
+  width: 10px;
+  border-radius: 50%;
+  background: blue;
+}
