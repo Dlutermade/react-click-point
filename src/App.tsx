@@ -22,7 +22,7 @@ function App() {
     setPoints((prev) => [...prev, { x: clientX, y: clientY }]);
   };
 
-  const handleUndo: React.MouseEventHandler = (e) => {
+  const handleUndo = () => {
     const newPoints = [...points];
     const poppedPoint = newPoints.pop();
     if (!poppedPoint) return;
@@ -31,7 +31,7 @@ function App() {
     setPoints(() => [...newPoints]);
   };
 
-  const handleRedo: React.MouseEventHandler = (e) => {
+  const handleRedo = () => {
     const newPopped = [...popped];
     const poppedPoint = newPopped.pop();
     if (!poppedPoint) return;
