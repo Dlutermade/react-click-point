@@ -5,12 +5,14 @@ type TPoint = {
   x: number;
   y: number;
 };
+
 /**
  * offsetX 與元素邊緣差
  * clientX 與瀏覽器邊緣差
  * pageX   與頁面邊緣差
  * screenX 與電腦螢幕邊緣差
  */
+
 function App() {
   const [points, setPoints] = useState<TPoint[]>([]);
   const [popped, setPopped] = useState<TPoint[]>([]);
